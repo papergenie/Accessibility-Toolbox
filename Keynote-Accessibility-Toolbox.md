@@ -100,21 +100,36 @@ SEO Benefits
 
 ## Is my website accessible?:  
 
-- Using Semantic HTML over div tags? 
-  - Allows screen readers to navigate the webpage
+- Use Semantic HTML over div tags, allows screen readers to navigate the webpage
 
 ```
-<a>, <button>, <details>, <input>, <select>, <textarea>
+<nav> 
+<main>
+<section>
+<article>
+<aside>
+<footer>
+
+<a>
+<button>
+<details>
+<input>
+<select>
+<textarea>
 ```
+
+___
 
 - Support Font Size Override layouts?
   - Ensure the CSS floats do not break. Use [Flexbox](https://css-tricks.com/snippets/css/a-guide-to-flexbox/)
+
+___
 
 - Is the Webpage content in the same order as the DOM? Screenreaders read by DOM order.
 
 - Are tabindexes used when widgets are shown?
 
-
+___
 
 - Accessible Payment Processes
 
@@ -129,6 +144,7 @@ Language * Currency * Accessibility * Browsers + Apps * Architectures = Platform
 300 * 180 * Accessibility * Browsers + Apps * Architectures = Platforms
 ```
 
+---
 
 ### Internationalization - i18n - Language and Currency:  
 
@@ -176,11 +192,12 @@ ___
 Scenarios
 
 - Loud Room, Bartender
+- Thicc Accents
 
 ___
 #### Dexterity 3
 
-- Drag and Drop
+- Drag and Drop 
 - Pinch to Zoom
 - Shake to undo
 
@@ -191,7 +208,12 @@ Scenarios to avoid dexterous controls
 - Cognitive Imparement 
 - Driving
 - Drunk
+- Tired
 - One Hand - avoid Pinch to zoom
+
+
+- Text Selection - Hard press??
+- Drag and drop alternative, Select and Move
 
 
 
@@ -235,40 +257,7 @@ Device
 
 ## Demographics:  
 
-- Accessibility for Fun and Profit - https://www.slideshare.net/anm8tr/accessibility-for-fun-and-profit
-
----
-
-## Accessibility Law:  
-
-- Demand Letter - compliance complaint not allowing accessibility access - https://www.boia.org/demand-letter#demandletter
-
-
-
-- Gov Requirements, School Requirements - Web Content Accessibility Guidelines (WCAG) 2.1 Level A/AA
-
-- Business Requirements, Payment Requirements - https://w3c.github.io/apa/payment-accessibility-reqs/
-
-
-___
-
-Business
-- ADA Domino's
-
-
----
-
-## Compliance:  
-
-Section 508
-WCAG 2.0
-WCaG 2.1 A AA AAA
-
-
-- WCAG 2.0 checklists - Level A, AA, AAA https://www.wuhcag.com/wcag-checklist/
-
-- Examples of WCAG Level AAA websites - https://www.wuhcag.com/wcag-level-aaa-websites/
-
+- Accessibility for Fun and Profit by Mike Wilcox - https://www.slideshare.net/anm8tr/accessibility-for-fun-and-profit
 
 ---
 
@@ -306,8 +295,42 @@ ___
 
 ---
 
+## Accessibility Law:  
+
+- Demand Letter - compliance complaint not allowing accessibility access - https://www.boia.org/demand-letter#demandletter
 
 
+- Gov Requirements, School Requirements - Web Content Accessibility Guidelines (WCAG) 2.1 Level A/AA
+
+- Business Requirements, Payment Requirements - https://w3c.github.io/apa/payment-accessibility-reqs/
+
+
+___
+### Compliance:  
+
+```
+ADA Section 508
+WCAG 2.0
+WCAG 2.1 A, AA, AAA
+```
+
+- Checklist Outline of Web Content Accessibility Guidelines 2.1 - http://romeo.elsevier.com/accessibility_checklist/
+
+- WCAG 2.0 checklists - Level A, AA, AAA https://www.wuhcag.com/wcag-checklist/
+
+- Examples of WCAG Level AAA websites - https://www.wuhcag.com/wcag-level-aaa-websites/
+
+
+---
+
+___
+Business
+- ADA Domino's Suit
+
+- WCAG 2.1 A/AA Has 50 Checkpoints, Categorized by 4 Principles - https://www.boia.org/wcag-2.1-a/aa-principles-and-checkpoints
+
+
+---
 
 ## User Testing:  
 
@@ -391,13 +414,17 @@ ___
 
 ### Font Spacing
 
-### Line Height
+WCAG 2.1 Line Height
 
 ```
 body { 
   line-height:1.5:
 }
 ```
+
+- Standard HTML `line-height:1.2`
+
+
 
 ---
 
@@ -557,8 +584,8 @@ font-size: 1.4em;
 
 ## Font-Size:  1rem
 
-- rem values are relative to the root html element. <br> For general content use.
-- em is equal to the computed font-size of that element’s parent. For HTML widgets
+- `rem` values are relative to the root html element. <br> For general content use.
+- `em` is equal to the computed font-size of that element’s parent. For HTML widgets
 
 - Default html element font size is `16px`
 
@@ -569,7 +596,6 @@ ___
 - https://medium.com/code-better/css-units-for-font-size-px-em-rem-79f7e592bb97
 
 ---
-
 
 ## Color Blindness:  
 
@@ -585,9 +611,10 @@ ___
 ### Elder Color Blindness:  
 
 - Elder Color Blindness - https://www.sciencedaily.com/releases/2014/02/140220102614.htm
-```
+
+
 Nearly 80 percent of the abnormalities involved confusion of the lighter (pastel) shades of blue versus purple and yellow versus green and yellow-green. These "blue-yellow" errors are distinct from the "red-green" errors observed in people with inherited color blindness, which affects about eight percent of males and 0.5 percent of females
-```
+
 
 ---
 
@@ -611,7 +638,6 @@ Nearly 80 percent of the abnormalities involved confusion of the lighter (pastel
 ---
 
 ---
-
 
 
 ## Color Selection:  
@@ -658,7 +684,7 @@ ___
 
 
 ```
-color: hsl(0,0%,80%);
+color: hsl(360,0%,80%);
 ```
 
 ```css
