@@ -84,73 +84,86 @@ News:
 
 ## Devbox 2020 - Accessibility Toolbox Edition:
 
-HTML + ARIA = Text Adventure Websites 
+HTML + ARIA Edition
 
 ---
 
-## Why?:  
+## Why HTML + ARIA?:  
 
-To create an experience and gain SEO Profits!
+To create a user experience and gain [SEO](https://yoast.com/what-is-googlebot/) exposure!
 
-___
-
-SEO Benefits
 
 ---
 
 ## Is my website accessible?:  
 
-- Use Semantic HTML over div tags, allows screen readers to navigate the webpage
 
-```
+- HTML5 + ARIA tags allow screen readers and SEO bots to navigate the webpage.
+
+
+Semantic HTML tags
+```html
 <nav> 
 <main>
 <section>
 <article>
-<aside>
+<aside> # as a sidenote
 <footer>
 
 <a>
-<button>
+<button> # Replace all <div> buttons with the <button> element.
 <details>
 <input>
 <select>
 <textarea>
 ```
 
+
+ARIA tags
+
+
+```html
+aria-label
+aria-hidden
+aria-live
+aria alert
+
+tabindex
+role="menu" # For main menus and sidebars use <nav> elements over using role="menu" aria tag
+```
+
+
 ___
 
-- Support Font Size Override layouts?
-  - Ensure the CSS floats do not break. Use [Flexbox](https://css-tricks.com/snippets/css/a-guide-to-flexbox/)
 
-___
+### An Accessible Website ...
 
-- Is the Webpage content in the same order as the DOM? Screenreaders read by DOM order.
+- Supports Font Size Override layouts.
 
-- Are tabindexes used when widgets are shown?
+- Uses the [Flexbox Grid](https://css-tricks.com/snippets/css/a-guide-to-flexbox/) or a [CSS Grid Framework](https://foundation.zurb.com/sites/docs/xy-grid.html) for content layouts.
 
-___
+- Avoids CSS floats which could break the content layout either by screen size, font-size, or web browser. 
 
-- Accessible Payment Processes
+- Orders the Webpage content with HTML. Screenreaders and SEO bots read by HTML DOM order.
+
+- Uses tabindexes for webpage widgets.
+
+- Has accessible HTML + ARIA code for a DatePicker, Payment Process, Drop down menu, and other UI elements
 
 ---
 
 ## 100% Accessibility:  Accessibility Matrix
 
-```
-Language * Currency * Accessibility * Browsers + Apps * Architectures = Platforms
-```
-```
-300 * 180 * Accessibility * Browsers + Apps * Architectures = Platforms
-```
+`Platforms = Language * Currency * Accessibility * (Browsers + Screenreaders + Apps) * (Phone + Tablets + Desktop)`
 
 ---
 
-### Internationalization - i18n - Language and Currency:  
+### I18N - Language and Currency:  
 
-- Wikipedia articles have been created in 304 languages, with 294 active and 10 closed - https://en.wikipedia.org/wiki/List_of_Wikipedias#Detailed_list
+- About 300 Languages actively exist online.
+  -  Wikipedia articles have been created in 304 languages, with 294 active and 10 closed - https://en.wikipedia.org/wiki/List_of_Wikipedias#Detailed_list
 
-- [Currency](https://en.wikipedia.org/wiki/List_of_circulating_currencies) - 180 currencies recognized as legal tender in United Nations (UN) - 
+- 180 currencies recognized as legal tender in United Nations (UN) - [Currency](https://en.wikipedia.org/wiki/List_of_circulating_currencies) 
 
 ---
 
@@ -171,13 +184,29 @@ ___
 Scenarios
 
 - dyslexic High contrast requirement 
-- dyslexic Low contrast requirement
+- dyslexic Low contrast requirement 
 - Night time - Dark background, Warm colors
 - Sunlight, Office Light - Light background
 
 <hr>
 
 - 6 Surprising Bad Practices That Hurt Dyslexic Users - https://uxmovement.com/content/6-surprising-bad-practices-that-hurt-dyslexic-users/
+  - Bad character and word Spacing 
+    - Use OS supported fonts to fix font space. Avoid justified text and double space after period, use normal word spacing.
+  - Poor font weight
+  - Long blocks of unbroken paragraphs
+  - Washout Effect - Example, transparent wallpaper backgrounds color colliding into the font
+  - Serif fonts - avoid cursive fonts and Times New Roman.
+  - Italicized text
+
+
+- The effect of contrast on reading speed in dyslexia. - https://www.ncbi.nlm.nih.gov/pubmed/10837835
+
+
+<hr>
+
+Dyslexia Products
+
 - Colored Overlays - https://www.amazon.com/Colored-Overlays-Reading-Tinted-Dyslexia/dp/B00NEYYRLW/
 - Colored Paper - https://www.amazon.com/School-Smart-Exhibit-Inches-Assorted/dp/B003U6QDJI/
 
@@ -257,19 +286,22 @@ Device
 
 ## Demographics:  
 
-- Accessibility for Fun and Profit by Mike Wilcox - https://www.slideshare.net/anm8tr/accessibility-for-fun-and-profit
+- Refer to "Accessibility for Fun and Profit" by Mike Wilcox - https://www.slideshare.net/anm8tr/accessibility-for-fun-and-profit
 
 ---
 
 ## Terms:  
 
-- HTML - Hypertext Markup Language - Organizes the content order for the screen reader
+- HTML - Hypertext Markup Language. Screenreaders read by the HTML DOM order `Content Order` of the Webpage for the screen reader.
 
-- ARIA Mission - The way to provide proper semantics for custom widgets to make them accessible with assistive technologies
-
-- ARIA - Accessible Rich Internet Applications
+- ARIA - Accessible Rich Internet Applications. HTML tags helping the text adventure of the website.
 
 - Semantic - relating to meaning in language or logic.
+
+- i18n - Internationalization. Accessible Language and Currency.
+
+- a11y - Accessibility. Accessible to Screenreaders and [SEO bots] ([GoogleBot](https://yoast.com/what-is-googlebot/), [BingBot](https://en.wikipedia.org/wiki/Bingbot), [DuckDuckGoBot](https://en.wikipedia.org/wiki/Googlebot))
+- DOM - Document Object Model - https://en.wikipedia.org/wiki/Document_Object_Model
 
 ___
 
@@ -283,15 +315,12 @@ ___
 - ADA Section 503 - https://adata.org/factsheet/section-503, https://www.dol.gov/ofccp/regs/compliance/section503.htm
 
 
-- i18n - Internationalization
-
-- a11y - Accessibility
+- ARIA Mission - The way to provide proper semantics for custom widgets to make them accessible with assistive technologies
 
 
+- [Kerning](https://en.wikipedia.org/wiki/Kerning) - Character spacing
 
-- Kerning - Character spacing
-
-- Keming - Bad character spacing
+- [Keming](https://old.reddit.com/r/keming/) - Bad character spacing
 
 ---
 
@@ -345,6 +374,8 @@ ___
 - https://www.usertesting.com/be-a-user-tester
 - Hiring Accessibility User Testers - https://www.peatworks.org/staff-training/hiring-consultants-testers
 
+- WANTED! Accessibility testing participants - https://www.system-concepts.com/insights/wanted_accessibility_testing_participants/
+
 ___
 
 ### Conduct User Testing
@@ -352,6 +383,9 @@ ___
 - How to conduct User Testing - https://www.invisionapp.com/inside-design/accessibility-user-testing/
 
 - Accessibility user testing: a cautionary tale - https://uxdesign.cc/disabled-user-testing-a-cautionary-tale-b6cf64425adb
+
+
+- Accessibility Testing Tutorial: Which Disabilities to Support? - https://www.guru99.com/accessibility-testing.html
 
 ___
 
@@ -403,7 +437,7 @@ Replace Arial with Verdana
 
 - Ikea - Futura to Verdana to Google Noto - https://hypebeast.com/2019/8/ikea-typeface-noto-google-monotype
 
-- Google NOTO font - no TOFU
+- Google NOTO - i18n font with no TOFU (missing characters)
 
 TOFO - missing character represented by an empty box `□`
 
@@ -646,29 +680,49 @@ Nearly 80 percent of the abnormalities involved confusion of the lighter (pastel
 
 Are Web Safe Colors Safe?
 
+
 ___
 
 ### ![](image/no-Bugs-Bunny.jpg)
 
+<br>
 
-- 216 "web safe" colors - https://websafecolors.info/learn
+216 web safe colors were for 256 color PCs - https://websafecolors.info/learn
 
+- Web safe colors are not safe from color contrast collisions
+
+- Consistent Colors For Your Site - All You Need To Know About Web Safe Colors - https://www.htmlgoodies.com/tutorials/web_graphics/consistent-colors-for-your-site-all-you-need-to-know-about-web-safe-colors.html
 
 ___
 
 
-#### Pick Semantic Colors using HSL
+
+
+## ![](/image/HSV-color-colors-wheel-names-degrees-rgb-hsb-hsv-hue.jpg)
+###### Pick a safe color contrast with HSL Color Steps
+
+- Colors Need Space. 
+- Safe Space
+- Color Themes - Hue 30°
+- Foreground Background - Value 80%
+- Value - 20%
+
+___
+
+- Pick a safe contrast between colors and values using HSV
+#### Pick Semantic Colors using HSV
+
+
+
 
 
 ---
 
-### HSL Color Selection:  
+### HSL Color Steps:  
 
-HSL Color Steps
+- Pick a 20% contrast for reading elements
 
-- Pick a 20% contrast delta reading elements
-
-- Pick a 10% contrast delta for UI coloring hinting 
+- Pick a 10% contrast for UI coloring hinting - `<hr>` 
 
 <hr>
 
@@ -677,6 +731,31 @@ HSL Color Steps
 - HSL half step 10% - 1/10 - for background element color hinting
 
 - HEX triple code Color Deltas are 6.5% 1/15
+
+![](/image/HSV-color-colors-wheel-names-degrees-rgb-hsb-hsv-hue.jpg)
+
+![](/image/web_safe_colors_by_hue.gif)
+
+
+
+___
+
+
+
+
+## HSV Safe Contrast Distances
+
+- 30° Color Distance
+- 2 Color Distance
+
+
+Section
+
+- Apple Contrast
+- Wiki Contrast
+- Android - Contrast
+- Amazon - 
+
 
 ___
 
@@ -804,15 +883,17 @@ Add Personality by shifting the hue Left or Right on the color wheel
 - Screenreaders convert websites into Text Adventures Games.
 
 
+![](/image/lampcomp.png)
+
 ```
 get lamp
 ```
 
-- jump to main content
+- Jump to main content
 - Read Article
-- Pause, play
-- Read nav bar
-- tab to widget
+- Pause, Play
+- Read nav bar, Read sidebar
+- Tab to widget
 
 ___
 
@@ -852,7 +933,7 @@ ___
 ---
 
 
-## Semantic HTML:
+## Semantic HTML:  
 
 #### Save the DIV ride the reader elements
 
@@ -873,6 +954,7 @@ HTML Reader Elements
 <select>
 <textarea>
 ```
+
 ---
 
 
@@ -1113,7 +1195,7 @@ ARIA aria-live="polite":
 
 - ARIA live regions - https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA/ARIA_Live_Regions
 
-- https://developer.mozilla.org/en-US/docs/Learn/Accessibility/CSS_and_JavaScript
+- CSS and JavaScript accessibility best practices - https://developer.mozilla.org/en-US/docs/Learn/Accessibility/CSS_and_JavaScript
 
 
 ```
@@ -1160,8 +1242,40 @@ ___
 
 
 
+## Hello World:  
+
+```html
+<html>
+<head>
+</head>
+<body>
+
+<ux> 	 User Experience Menu
+</ux>
+
+<nav> 	Main menu
+</nav>
+
+<nav> 	Sidebar menu
+</nav>
+
+<main tabindex="-1"> "jump to main content" point
+
+<section> 	Alerts, Pinned Posts
+</section>
+
+<article> 	Reader View Content
+</article>
+
+</main>
+<footer> 	 SiteMap, Contact Us
+</footer>
+</body>
+</html>
+```
 
 
+---
 
 # Awesome Accessibility
 
