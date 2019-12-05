@@ -111,7 +111,7 @@ Semantic HTML tags
 <footer>
 
 <a>
-<button> # Replace all <div> buttons with the <button> element.
+<button> # Replace all <div> buttons with the <button> elements.
 <details>
 <input>
 <select>
@@ -218,10 +218,11 @@ ___
 
 <hr>
 
-Scenarios
+Closed caption Scenarios
 
 - Loud Room, Bartender
-- Thicc Accents
+- Quiet Room, Library, Home
+- Speaker with a very regional accent. Thick accent
 
 ___
 #### Dexterity 3
@@ -302,6 +303,12 @@ Device
 
 - a11y - Accessibility. Accessible to Screenreaders and [SEO bots] ([GoogleBot](https://yoast.com/what-is-googlebot/), [BingBot](https://en.wikipedia.org/wiki/Bingbot), [DuckDuckGoBot](https://en.wikipedia.org/wiki/Googlebot))
 - DOM - Document Object Model - https://en.wikipedia.org/wiki/Document_Object_Model
+
+- SEO - Search Engine Optimization. 
+
+- Googlebot, web bot, web crawler
+
+- Color Collisions - 
 
 ___
 
@@ -732,7 +739,7 @@ ___
 
 - HEX triple code Color Deltas are 6.5% 1/15
 
-![](/image/HSV-color-colors-wheel-names-degrees-rgb-hsb-hsv-hue.jpg)
+![](/image/360-HSV-color-colors-wheel-names-degrees-rgb-hsb-hsv-hue.jpg)
 
 ![](/image/web_safe_colors_by_hue.gif)
 
@@ -816,7 +823,7 @@ ___
 
 ___
 
-## ![RGB Color Wheel](https://upload.wikimedia.org/wikipedia/commons/thumb/a/ab/RBG_color_wheel.svg/576px-RBG_color_wheel.svg.png)
+## ![RGB CYM  Color Wheel](/image/12 Color Hues - ROYLGSCABVMR Color Wheel.png)
 ```
 red orange yellow chartreuse green springgreen cyan azure blue violet magenta rose
 ```
@@ -827,7 +834,6 @@ ___
 
 - RBG Color Wheel - https://en.wikipedia.org/wiki/Color_wheel#/media/File:RBG_color_wheel.svg
 
-## ![RGB Color Wheel](https://upload.wikimedia.org/wikipedia/commons/thumb/a/ab/RBG_color_wheel.svg/576px-RBG_color_wheel.svg.png)
 
 - Spring Green - https://en.wikipedia.org/wiki/Spring_green
 - Chartreuse Green, Lawn Green - https://en.wikipedia.org/wiki/Chartreuse_(color)
@@ -837,6 +843,7 @@ ___
 ### RYB: Legacy Primary Colors
 
 ## ![RYB Color Wheel](https://upload.wikimedia.org/wikipedia/commons/thumb/8/8c/Color_star-en_%28tertiary_names%29.svg/480px-Color_star-en_%28tertiary_names%29.svg.png)
+## ![RGB CYM  Color Wheel](/image/12 Color Hues - ROYLGSCABVMR Color Wheel.png)
 
 - https://en.wikipedia.org/wiki/Primary_color
 
@@ -883,7 +890,7 @@ Add Personality by shifting the hue Left or Right on the color wheel
 - Screenreaders convert websites into Text Adventures Games.
 
 
-![](/image/lampcomp.png)
+![GET LAMP: The Text Adventure Documentary](/image/lampcomp.png)
 
 ```
 get lamp
@@ -900,8 +907,9 @@ ___
 
 ### Text Adventures:  
 
-- GetLamp Doc http://www.getlamp.com/techsupport/
-- GetLamp Trailer - https://www.youtube.com/watch?v=UwZxUGmqSOo
+- GET LAMP Trailer - https://www.youtube.com/watch?v=UwZxUGmqSOo
+- GET LAMP: The Text Adventure Documentary - https://www.youtube.com/watch?v=LRhbcDzbGSU
+- GetLamp.com - http://www.getlamp.com/techsupport/
 
 
 ### iPhone Text Adventure Game - In a Door Room:  
@@ -933,29 +941,6 @@ ___
 ---
 
 
-## Semantic HTML:  
-
-#### Save the DIV ride the reader elements
-
-HTML Reader Elements
-
-```
-<nav> 
-<main>
-<section>
-<article>
-<aside>
-<footer>
-
-<a>
-<button>
-<details>
-<input>
-<select>
-<textarea>
-```
-
----
 
 
 
